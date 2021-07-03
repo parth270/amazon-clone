@@ -1,0 +1,82 @@
+.big-container {
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header img {
+  width: 100px;
+  margin: 20px auto;
+  object-fit: contain;
+}
+.container {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 70px;
+}
+.container h2{
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+.input{
+    display: flex;
+    margin: 4px 0;
+    flex-direction: column;
+}
+.valid{
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.valid:focus{
+    outline:none;
+}
+.Invalid{
+    height:25px;
+    border:1px solid red;
+    background-color:rgb(255, 233, 233);
+    border-radius:3px;
+}
+.Invalid:focus{
+    border:1px solid red;
+    outline:none;
+    background-color:rgb(255, 233, 233);
+}
+.input label{
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0 0 4px 0;
+}
+.login{
+    height: 25px;
+    margin: 10px 0;
+    background-color: #f2cb67;
+    border: 1px solid #555;
+}
+.login:hover{
+    background-color: #e9b941;
+}
+.container p{
+    font-size: 12px;
+    margin: 5px 0 0 0;
+}
+.register{
+    height: 25px;
+    margin: 10px 0;
+    border: 1px solid #555;
+}
+.register:hover{
+    background-color: rgb(211, 211, 211);
+}
+.error-text{
+    margin:0;
+    margin-top: -1px !important;
+    color:red;
+    font-size:12px;
+}
