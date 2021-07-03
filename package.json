@@ -23,9 +23,9 @@
     "stripe": "^8.160.0",
     "web-vitals": "^1.1.2"
   },
-  "scripts": {
+    "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false && react-scripts build",  // Add CI=False here
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
