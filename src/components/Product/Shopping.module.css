@@ -1,0 +1,41 @@
+.container{
+    width: 100%;
+    display: flex;
+    min-height:180px;
+    margin: 20px 0;
+}
+.img{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.img img{
+    height: 180px;
+    width: 180px;
+    object-fit: contain;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.info p{
+    margin: 0 0 5px 0;
+}
+.star{
+    display: flex;
+}
+.button{
+    background-color: #ebbe4e;
+    height: 21px;
+    border: 1px solid #555555;
+    border-radius: 3px;
+    width: 140px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgb(33, 32, 32);
+}
+.load{
+    padding-top: 10px;
+    font-size:12px;
+}
