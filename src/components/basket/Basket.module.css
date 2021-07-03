@@ -1,0 +1,33 @@
+.ad{
+    width:100%;
+    margin-bottom: 10px;
+}
+.big-container{
+    background-color: #fff;
+    height: max-content;
+    padding-bottom: 10px;
+}
+.container{
+    display: flex;
+    width: 100%;
+}
+.shopping-basket h2 {
+    margin-right: 10px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.left-container {
+    flex: 1;
+}
+.products{
+    margin-left: 10px;
+}
+.right-container {
+    margin: 0 10px 0 0;
+    width: 300px;
+}
+.right-container h2{
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
