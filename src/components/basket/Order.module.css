@@ -1,0 +1,11 @@
+.orders{
+    height: fit-content;
+    background-color: #fff;
+    padding: 0 15px;
+}
+.orders h2{
+    margin: 0;
+    padding-top: 15px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 25px;
+}
