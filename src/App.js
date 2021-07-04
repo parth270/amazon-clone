@@ -21,7 +21,7 @@ function App() {
   const sendHandler = useCallback(() => {
     dispatch(itemActions.clearHandler());
 
-    fetch("https://clone-8e97f-default-rtdb.firebaseio.com/items.json")
+    fetch("https://clone-db194-default-rtdb.firebaseio.com/items.json")
       .then((response) => response.json())
       .then((data) => {
         const loadeditems = [];
