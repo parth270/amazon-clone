@@ -9,7 +9,6 @@ import { itemActions } from "./store/item";
 import Checkout from "./components/basket/Checkout";
 import { Elements } from "@stripe/react-stripe-js";
 import {loadStripe } from '@stripe/stripe-js';
-import Order from "./components/basket/Order";
 
 const promise = loadStripe(
   "pk_test_51J8OruSAJSO5Ac0I7wRusrFqDkFlubTKFZm8B2jodKpomd0rCO6a8xp60zdwjt5XVPjjWlFORxsD9030AHV3Zcb300BiHPoXfF"
@@ -65,10 +64,6 @@ function App() {
         <Route path="/basket" exact>
           <Header />
           <Basket />
-        </Route>
-        <Route path="/orders">
-        <Header />
-          <Order/>
         </Route>
         <Route path="/basket/checkout">
           <Header />
