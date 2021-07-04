@@ -33,8 +33,8 @@ const Header = () => {
   };
   const logoutHandler = () => {
     localStorage.clear();
-    fetch('https://clone-8e97f-default-rtdb.firebaseio.com/orders.json',{method:'DELETE'});
-    fetch('https://clone-8e97f-default-rtdb.firebaseio.com/total.json',{method:'DELETE'});
+    fetch('https://clone-db194-default-rtdb.firebaseio.com/orders.json',{method:'DELETE'});
+    fetch('https://clone-db194-default-rtdb.firebaseio.com/total.json',{method:'DELETE'});
     dispatch(authActions.logoutHandler());
     setBackdrop(false);
     history.go();
