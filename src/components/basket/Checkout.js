@@ -63,6 +63,11 @@ const Checkout = () => {
            setProcessing(false);
            
    });
+    orderHandler();
+           setSucceeded(true);
+           setError(null);
+           setProcessing(false);
+    
   };
 
   const changeHandler = (event) => {
@@ -118,7 +123,8 @@ const Checkout = () => {
                 <div className={classes["payment-price-container"]}>
                   Order Total: ${total.toFixed(2)}
                 </div>
-                <button disabled={processing || disabled || succeeded} className={classes['checkout-button']} >
+                <button disabled={processing} className={classes['checkout-button']} >
+                /*<button disabled={processing || disabled || succeeded} className={classes['checkout-button']} >*/
                   <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
                 </button>
               </form>
