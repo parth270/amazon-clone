@@ -16,7 +16,7 @@ const Product =(props)=>{
     }
     
     const addHandler=async()=>{
-        const response=await fetch(`https://clone-8e97f-default-rtdb.firebaseio.com/items/${id}.json`,{
+        const response=await fetch(`https://clone-db194-default-rtdb.firebaseio.com/items/${id}.json`,{
             method:'POST',
             body:JSON.stringify({title:para,amount:+amount,star:star,image:image,quantity:1,id:id}),
             headers:{
