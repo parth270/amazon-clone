@@ -92,7 +92,7 @@ const Header = () => {
             <span className={classes.up}>good to see you</span>
             <span className={classes.down}>Sign out</span>
           </div>} */}
-            <div className={classes.returns} onClick={history.replace('/orders')} >
+            <div className={classes.returns}  >
               <span className={classes.up}>Returns</span>
               <span className={classes.down}>& Orders</span>
             </div>
