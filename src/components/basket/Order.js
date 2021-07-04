@@ -10,7 +10,7 @@ const Order=()=>{
 
     useEffect(()=>{
         const fetchHandler=async()=>{
-            const response =await fetch('https://clone-8e97f-default-rtdb.firebaseio.com/orders.json');
+            const response =await fetch('https://clone-db194-default-rtdb.firebaseio.com/orders.json');
             const data=await response.json();
             const newData=Object.values(data);
             setOrders(newData);
