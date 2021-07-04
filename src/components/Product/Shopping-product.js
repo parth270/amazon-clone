@@ -10,13 +10,13 @@ const ShoppingBasket=(props)=>{
     const dispatch =useDispatch();
     const removeHandler=async()=>{
         setStatus(true);
-        const response=await fetch(`https://clone-8e97f-default-rtdb.firebaseio.com/items/${id}.json`);
+        const response=await fetch(`https://clone-db194-default-rtdb.firebaseio.com/items/${id}.json`);
 
         const data=await response.json();
         const newData=Object.keys(data);
         console.log(newData);
 
-        fetch(`https://clone-8e97f-default-rtdb.firebaseio.com/items/${id}/${newData[1]}.json`,{method:'DELETE'});
+        fetch(`https://clone-db194-default-rtdb.firebaseio.com/items/${id}/${newData[1]}.json`,{method:'DELETE'});
 
         dispatch(itemActions.removeHandler({id:id,amount:amount,quantity:quantity}));
         setStatus(false)
