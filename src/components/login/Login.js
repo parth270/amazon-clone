@@ -46,7 +46,7 @@ const Login = (props) => {
   const signupHandler = async (email, password) => {
     setLoading(true);
     const response = await fetch(
-      "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAEz2WJY4IGu6NAJqF50F-natVacz_Eyqo",
+      "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyA6ksGGgx-Qx2UxTqY6_-RqqcUh6qqEwWM",
       {
         method: "POST",
         body: JSON.stringify({
@@ -80,7 +80,7 @@ const Login = (props) => {
   const signinHandler = async (email, password) => {
     setLoading(true);
     const response = await fetch(
-      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAEz2WJY4IGu6NAJqF50F-natVacz_Eyqo",
+      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyA6ksGGgx-Qx2UxTqY6_-RqqcUh6qqEwWM",
       {
         method: "POST",
         body: JSON.stringify({
