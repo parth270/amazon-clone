@@ -41,12 +41,12 @@ const Checkout = () => {
   const orderHandler=()=>{
     
      for(const keys in items){
-       fetch(`https://clone-8e97f-default-rtdb.firebaseio.com/orders.json`,{
+       fetch(`https://clone-db194-default-rtdb.firebaseio.com/orders.json`,{
         method:'POST',
         body:JSON.stringify({amount:items[keys].amount,id:items[keys].id,image:items[keys].image,quantity:items[keys].quantity,star:items[keys].star,title:items[keys].title}),
        }).then()
      }
-     fetch('https://clone-8e97f-default-rtdb.firebaseio.com/total.json',{method:'POST',body:JSON.stringify(total)})
+     fetch('https://clone-db194-default-rtdb.firebaseio.com/total.json',{method:'POST',body:JSON.stringify(total)})
    }
 
   const submitHandler = async (event) => {
