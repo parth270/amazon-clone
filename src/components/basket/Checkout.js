@@ -61,7 +61,7 @@ const Checkout = () => {
            setSucceeded(true);
            setError(null);
            setProcessing(false);
-           history.replace('/orders');
+           
    });
   };
 
