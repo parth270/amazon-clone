@@ -124,7 +124,6 @@ const Checkout = () => {
                   Order Total: ${total.toFixed(2)}
                 </div>
                 <button disabled={processing} className={classes['checkout-button']} >
-                /*<button disabled={processing || disabled || succeeded} className={classes['checkout-button']} >*/
                   <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
                 </button>
               </form>
