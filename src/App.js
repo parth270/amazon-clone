@@ -56,6 +56,7 @@ function App() {
         <Route path="/" exact>
           <Header />
           <Home />
+          <Footer/>
         </Route>
         {!localStorage.getItem("status") && (
           <Route path="/login">
@@ -65,12 +66,14 @@ function App() {
         <Route path="/basket" exact>
           <Header />
           <Basket />
+          <Footer/>
         </Route>
         <Route path="/basket/checkout">
           <Header />
           <Elements stripe={promise}>
             <Checkout />
           </Elements>
+          <Footer/>
         </Route>
         <Route path="*">
           <div className="error-container">
@@ -79,7 +82,7 @@ function App() {
           </div>
         </Route>
       </Switch>
-      <Footer/>
+      
     </Fragment>
   );
 }
