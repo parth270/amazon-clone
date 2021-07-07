@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import { Route, Switch } from "react-router-dom";
 import Basket from "./components/basket/Basket";
+import Footer from './components/Footer/Footer';
 import Login from "./components/login/Login";
 import { useDispatch } from "react-redux";
 import { itemActions } from "./store/item";
@@ -78,6 +79,7 @@ function App() {
           </div>
         </Route>
       </Switch>
+      <Footer/>
     </Fragment>
   );
 }
