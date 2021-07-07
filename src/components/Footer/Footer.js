@@ -3,9 +3,9 @@ import classes from './Footer.module.css';
 
 const Footer=()=>{
     return(
-        <div className={classes.container} >
+        <footer className={classes.container} >
             <p>Amazon-clone by Parth Arora</p>
-        </div>
+        </footer>
     );
 }
 
